@@ -47,6 +47,25 @@ shell and the xmllint utility, but the test documents will work with
 any schema-aware XML parser. We will add unit tests as schema
 development continues.
 
+Additional tests with pyIATI
+============================
+
+Dev Installation
+----------------
+
+.. code-block:: bash
+  # Create and start a virtual environment
+  python3 -m venv pyenv
+  source pyenv/bin/activate
+
+  # Install Python package dependencies
+  pip install -r requirements-dev.txt
+
+These tests include a series of short XML documents that should pass
+or fail when parsed against the schemas in this distribution. py.test
+is used as a test runner to check the validity of these files against
+the defined schema.
+
 Acknowlegements
 David Megginson <david.megginson@megginson.com> for his original work on
 the IATI Schemas and continued support and involvment.
